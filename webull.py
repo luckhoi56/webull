@@ -237,12 +237,10 @@ class webull :
 
 if __name__ == '__main__' :
     webull = webull()
-    webull.login('xxxxxx@xxxx.com', 'xxxxx')
-    webull.get_trade_token('xxxxxx')
-    # webull.place_order('NKTR', 21.0, 1)
-    orders = webull.get_orders()
-    for order in orders :
-        # print(order)
-        webull.cancel_order(order['orderId'], '')
-    # print(webull.get_serial_id())
-    # print(webull.get_ticker('BABA'))
+    webull.login('luckhoi89@gmail.com', 'Khangluc1.')
+    webull.get_account_id()
+    webull.get_trade_token('127199')
+    'print(webull.get_account())'
+    
+    #get the price of the sticker you want
+    print(webull.get_quote('cost')['close'])
